@@ -85,7 +85,7 @@ const deleteData = async ( ) =>{
         }
     });
   
-    console.log(json);
+    json => console.log(json);
  };
  deleteData( );
 
