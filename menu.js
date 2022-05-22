@@ -76,21 +76,14 @@ fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food', {
 .then(json => console.log(json));
 
 
-const deleteData = async ( ) =>{
-    const response = await fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food', {
-        method: 'DELETE', 
-        body: JSON.stringify({
-            "id": "integer"
-        }),
-         
-        headers: {
-            "Content-type": "application/json; charset=UTF-8"
-        }
-    });
-  
-    json => console.log(json);
- };
- deleteData( );
 
+const deleteFood = (id)  =>{
+    console.log("DELETE");
+    fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food', {
+        method: "DELETE",
+    }).then((res) => {
+        console.log(res);
+    });
+};
 catchJson();
 
