@@ -15,7 +15,26 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
+  button{
+    color: black;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.content{
+    color:black;
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
   h1 {
     text-align: center;
     padding: 1.5rem 2.5rem;
